@@ -1,0 +1,127 @@
+.testimonial__container {
+    max-width: 1300px;
+    position: relative;
+}
+
+.testimonial__element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.testimonial__content {
+    position: relative;
+}
+
+.testimonial__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial__clients {
+}
+.testimonial__clients::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 13px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--linear-color);
+    filter: blur(10px);
+    transform: rotate(-20deg);
+    opacity: 0;
+    transition: var(--transition);
+}
+.testimonial__clients:hover::before {
+    opacity: 1;
+}
+.client__link img {
+    position: relative;
+    background: url("../img/content/client/bg.svg") center / contain no-repeat;
+    width: 75px;
+    height: 75px;
+    padding: 10px 10px 10px 10px;
+    transition: var(--transition);
+}
+.client__link:hover img {
+    background: url("../img/content/client/bg-hover.svg") center / contain no-repeat;
+    width: 75px;
+    display: block;
+    height: 75px;
+    padding: 10px 10px 10px 10px;
+}
+
+.client__link .testimonial__card {
+    transition: var(--transition);
+}
+.client__link:hover .testimonial__card {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+}
+.testimonial__card {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -27px;
+    left: 87px;
+    padding: 18px 23px;
+    width: 297px;
+    background: url("../img/content/bg-testimonial.svg") 0 0 / 100% 100% no-repeat;
+}
+.testimonial__text {
+    padding: 10px;
+}
+
+.client-1 {
+    position: absolute;
+    top: 16rem;
+    left: 6rem;
+}
+.client-2 {
+    position: absolute;
+    top: 21rem;
+    right: 22rem;
+}
+.client-3 {
+    position: absolute;
+    top: 42rem;
+    right: 6rem;
+}
+.client-4 {
+    position: absolute;
+    bottom: 11rem;
+    right: 15rem;
+}
+.client-5 {
+    position: absolute;
+    bottom: 22.2rem;
+    right: 44rem;
+}
+.client-6 {
+    position: absolute;
+    bottom: 20rem;
+    left: 3rem;
+}
+
+.card__text {
+    font-size: 12px;
+    line-height: 1.67;
+    margin-bottom: 8px;
+}
+.card__name {
+    border-bottom: 1px solid;
+    border-image: var(--linear-color);
+    border-image-slice: 1;
+    font-size: 12px;
+    line-height: 2;
+}
+.card__name span {
+    color: var(--color-text-grey-2);
+}

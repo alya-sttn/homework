@@ -1,0 +1,83 @@
+@import "header.css";
+@import "fonts.css";
+@import "block.css";
+@import "burger.css";
+@import "reset.css";
+@import "hero.css";
+@import "about.css";
+@import "service.css";
+@import "quality.css";
+@import "start.css";
+@import "testimonial.css";
+@import "pricing.css";
+@import "partners.css";
+@import "articles.css";
+@import "subscribe.css";
+@import "footer.css";
+@import "media.css";
+
+:root {
+    --linear-color: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+    --main-color-purple: #ca6aeb;
+    --color-text-grey-1: #b0b0b2;
+    --color-text-grey-2: #d1d1d1;
+    --general-white: #fff;
+    --transition: all 0.4s ease 0s;
+}
+
+.body {
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 1.75;
+    color: var(--general-white);
+    background: #18181b;
+    font-size: 16px;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+.header {
+    margin-bottom: 20px;
+}
+/* ================== */
+
+.title {
+    text-transform: uppercase;
+    display: inline-block;
+    background: var(--linear-color);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 121%;
+    margin-bottom: 12px;
+}
+.video__hover{
+    background: #21232e;
+    transition: var(--transition);
+    width: 196px;
+    height: 127px;
+    transition: var(--transition);
+}
+.video__hover:hover{
+    box-shadow: 0 0 10px 5px #611891;
+}
+
+section{
+    margin-bottom: 150px;
+}
